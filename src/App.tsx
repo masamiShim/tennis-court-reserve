@@ -57,7 +57,7 @@ export const App: React.FC = () => {
       const c = Object.keys(condCourt)
                       .filter(k => Object(condCourt)[ k ])
                       .map(k => k);
-      const r = await get('http://203.138.144.214:8888/list/reservable',
+      const r = await get('http://xxxxxxxxx/list/reservable',
                           { courts: c, time: condTime, nighter: nighter });
       if (!r) {
         setCourts(new Court());
